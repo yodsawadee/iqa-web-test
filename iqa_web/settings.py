@@ -19,8 +19,8 @@ import os
 SECRET_KEY = 'qj=kov0a8j7o@#o2bm119&_o8_fn3&5san!h+^ixk%r!29gwhy'
 
 
-# ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['iqa-web-test-deploy.herokuapp.com']
+ALLOWED_HOSTS = []
+##ALLOWED_HOSTS = ['iqa-web-test-deploy.herokuapp.com']
 
 
 # Application definition
@@ -94,16 +94,16 @@ WSGI_APPLICATION = 'iqa_web.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'postgres',
-#         'USER': 'postgres',
-#         'PASSWORD': '1234',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
+##DATABASES = {
+##     'default': {
+##         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+##         'NAME': 'postgres',
+##         'USER': 'postgres',
+##         'PASSWORD': '1234',
+##         'HOST': 'localhost',
+##         'PORT': '5432',
+##     }
+## }
 
 DATABASES = {
     'default': {
