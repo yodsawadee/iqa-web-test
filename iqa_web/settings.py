@@ -19,7 +19,7 @@ import os
 SECRET_KEY = 'qj=kov0a8j7o@#o2bm119&_o8_fn3&5san!h+^ixk%r!29gwhy'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 ##ALLOWED_HOSTS = ['iqa-web-test-deploy.herokuapp.com']
 
 
@@ -108,20 +108,13 @@ WSGI_APPLICATION = 'iqa_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'deaumvid3en3s9',
-        'USER': 'djzswgxenfsgtt',
-        'PASSWORD': 'c4b72dc53f6c1a979c174a5d2e1d01ad48139d1ed79b5f842876ca534830047a',
-        'HOST': 'ec2-174-129-224-157.compute-1.amazonaws.com',
+        'NAME': 'dahpmkfrv5cps2',
+        'USER': 'uawvthbwwibokk',
+        'PASSWORD': '8a83a80e2c5cafd03fb49bf023725bdc22f21925b054edf98644b992d3ea3bc9',
+        'HOST': 'ec2-54-221-253-228.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
-
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=config('postgres://djzswgxenfsgtt:c4b72dc53f6c1a979c174a5d2e1d01ad48139d1ed79b5f842876ca534830047a@ec2-174-129-224-157.compute-1.amazonaws.com:5432/deaumvid3en3s9')
-#     )
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -155,17 +148,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'iqa_web/static/')
-# ]
-# # Static files (CSS, JavaScript, Images)
-# # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# STATIC_URL = '/static/'
-
-
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # DEBUG = config('DEBUG', default=False, cast=bool)
@@ -178,33 +160,13 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
     # os.path.join(PROJECT_ROOT, 'static'),
 )
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # for /static/root/favicon.ico    
-WHITENOISE_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'root') 
+# WHITENOISE_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'root') 
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-
-# # Static files (CSS, JavaScript, Images)
-# # https://docs.djangoproject.com/en/1.9/howto/static-files/
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATIC_TMP = os.path.join(BASE_DIR, 'static')
-# STATIC_URL = '/static/'
-
-# # Extra places for collectstatic to find static files.
-# STATICFILES_DIRS = (
-#     os.path.join((BASE_DIR), 'static'),
-# #     os.path.join(PROJECT_ROOT, 'static'),
-# #     './static/',
-# )
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-# SECRET_KEY = config('1234')
